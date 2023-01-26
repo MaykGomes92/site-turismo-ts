@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './style.scss'
+import './styles.scss'
 const index = () => {
   
   return (
-    <main>
+    <main className='mainHome'>
       <header>
         <img src='logo-area-1.png' alt='logo' />
       </header>

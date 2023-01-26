@@ -1,0 +1,213 @@
+.contentListasViagens {
+ background-color: whitesmoke;
+ .mainListas {
+  .logoViagens{
+    position: absolute;
+    width: 120px;
+  }
+  padding: 20px;
+  margin: auto;
+  width: 98%;
+  background: url("../../../public/fundo-listaViagens.webp");
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  .leftSide {
+   width: 100%;
+   margin-top: 150px;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   h1 {
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+   }
+   p {
+    color: white;
+    font-size: 2rem;
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 450px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+     sans-serif;
+   }
+
+   ul {
+    display: flex;
+    background-color: whitesmoke;
+    width: 300px;
+    margin-right: auto;
+    margin-left: -35px;
+    border-radius: 0px 15px 15px 0px;
+    padding: 30px;
+    margin-top: -50px;
+    li + li {
+     margin-left: 14px;
+    }
+   }
+  }
+
+  .rightSide {
+   margin-top: 30px;
+   background-color: white;
+   overflow: hidden;
+   box-shadow: 3px 6px rgba(0, 0, 0, .1);
+   .destinosImages {
+    display: flex;
+    img {
+     width: 63vw;
+     height: 600px;
+    }
+
+    .destino1 {
+     width: 100%;
+     .descriptions {
+      padding: 15px 5px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 850px;
+      text-align: center;
+      .descriptionRight {
+       h1 {
+       }
+       p {
+        margin-right: auto;
+        width: 100%;
+        text-align: left;
+       }
+       ul {
+        display: flex;
+        margin-top: 35px;
+        justify-content: space-around;
+        li {
+         width: 70px;
+         height: 70px;
+         border-radius: 50%;
+         border: 3px solid gray;
+         display: flex;
+         align-items: center;
+         p {
+          text-align: center;
+          span {
+           font-size: 0.7rem;
+           font-weight: bold;
+           color: grey;
+          }
+         }
+        }
+       }
+      }
+      img {
+       margin-right: 20px;
+       margin-top: -10px;
+       width: 250px;
+       height: 250px;
+      }
+     }
+    }
+    .destino2 {
+     width: 100%;
+     .descriptions {
+      padding: 15px 5px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 850px;
+      text-align: center;
+      .descriptionRight {
+       h1 {
+       }
+       p {
+        margin-right: auto;
+        width: 100%;
+        text-align: left;
+       }
+       ul {
+        display: flex;
+        margin-top: 35px;
+        justify-content: space-around;
+
+        li {
+         width: 70px;
+         height: 70px;
+         border-radius: 50%;
+         border: 3px solid gray;
+         display: flex;
+         align-items: center;
+         p {
+          text-align: center;
+          span {
+           font-size: 0.7rem;
+           font-weight: bold;
+           color: grey;
+          }
+         }
+        }
+       }
+      }
+      img {
+       margin-right: 20px;
+       margin-top: -10px;
+       width: 250px;
+       height: 250px;
+      }
+     }
+    }
+    .destino3 {
+     width: 100%;
+     .descriptions {
+      padding: 15px 5px;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 850px;
+      text-align: center;
+      .descriptionRight {
+       h1 {
+       }
+       p {
+        margin-right: auto;
+        width: 100%;
+        text-align: left;
+       }
+       ul {
+        display: flex;
+        margin-top: 35px;
+        justify-content: space-between;
+        li {
+         width: 70px;
+         height: 70px;
+         border-radius: 50%;
+         border: 3px solid gray;
+         display: flex;
+         align-items: center;
+         p {
+          text-align: center;
+          span {
+           font-size: 0.7rem;
+           font-weight: bold;
+           color: grey;
+          }
+         }
+        }
+       }
+      }
+      img {
+       margin-right: 20px;
+       margin-top: -10px;
+       width: 250px;
+       height: 250px;
+      }
+     }
+    }
+   }
+  }
+ }
+}
