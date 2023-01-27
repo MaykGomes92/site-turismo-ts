@@ -7,18 +7,19 @@ import { RxDoubleArrowLeft } from "react-icons/rx";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import { BsArrowRightCircle } from "react-icons/bs";
 
-function MainListas()  {
+import { ListaDeHoteis } from "./listaHoteis";
+function MainListas() {
+ const dadosSlide = React.useRef<HTMLDivElement>(null);
 
- const dadosSlide = React.useRef<HTMLDivElement>(null)
-
- function slideEsquerda(){
-
+ function slideEsquerda() {
+  if (dadosSlide.current !== null) {
+   dadosSlide.current.scrollLeft -= dadosSlide.current.offsetWidth;
+  }
  }
 
- function slideDireita(){
-  console.log(dadosSlide.current?.scrollLeft)
-  if(dadosSlide.current !== null) {
-   dadosSlide.current.scrollLeft += dadosSlide.current.offsetWidth
+ function slideDireita() {
+  if (dadosSlide.current !== null) {
+   dadosSlide.current.scrollLeft += dadosSlide.current.offsetWidth;
   }
  }
  return (
@@ -31,7 +32,9 @@ function MainListas()  {
       alt="logo da empresa"
      />
     </Link>
-    <Link className="voltar" to='/'><RxDoubleArrowLeft/></Link>
+    <Link className="voltar" to="/">
+     <RxDoubleArrowLeft />
+    </Link>
     <div className="leftSide">
      <div className="textTitle">
       <h1>Sky Team</h1>
@@ -67,131 +70,51 @@ function MainListas()  {
       </li>
      </ul>
     </div>
-     <BsArrowLeftCircle className="arrowLeft"/>
-     <BsArrowRightCircle className="arrowRight" onClick={slideDireita}/>
+    <BsArrowLeftCircle className="arrowLeft" onClick={slideEsquerda} />
+    <BsArrowRightCircle className="arrowRight" onClick={slideDireita} />
     <div className="rightSide" ref={dadosSlide}>
      <div className="destinosImages">
-      <div className="destino1">
-       <img src="./rj-1-p.jpg" alt="" />
-       <div className="descriptions">
-        <div className="descriptionLeft">
-         <img src="rj-2.jpg" alt="" />
-        </div>
-        <div className="descriptionRight">
-         <h1>Copacabana Palace</h1>
-         <p>
-          O Hotel Copacabana Palace é um hotel de luxo localizado na Praia de
-          Copacabana, no Rio de Janeiro, Brasil. Fundado em 1923, é considerado
-          um ícone da cidade e um dos hotéis mais famosos do Brasil. Possui
-          quartos e suítes luxuosos, piscina ao ar livre, spa, academia,
-          restaurantes renomados e vista para a praia.
-         </p>
-         <ul>
-          <li>
-           <p>
-            212 <br /> <span>Quartos</span>
-           </p>
-          </li>
-          <li>
-           <p>
-            314 <br /> <span>Hóspedes</span>
-           </p>
-          </li>
-          <li>
-           <p>
-            9.7 <br /> <span>Nota</span>
-           </p>
-          </li>
-          <li>
-           <p>
-            Sim <br /> <span>Pet's</span>
-           </p>
-          </li>
-         </ul>
+      {ListaDeHoteis.map((itens) => (
+       <div className="destinos">
+        <img src={itens.img1} alt="" />
+        <div className="descriptions">
+         <div className="descriptionLeft">
+          <img src={itens.img2} alt="" />
+         </div>
+         <div className="descriptionRight">
+          <h1>{itens.title}</h1>
+          <p>{itens.descricao}</p>
+          <ul>
+           <li>
+            <p>
+             {itens.infoAdicionalQuarto} <br /> <span>Quartos</span>
+            </p>
+           </li>
+           <li>
+            <p>
+             {itens.infoAdicionalHospedes} <br /> <span>Hóspedes</span>
+            </p>
+           </li>
+           <li>
+            <p>
+             {itens.infoAdicionalNota} <br /> <span>Nota</span>
+            </p>
+           </li>
+           <li>
+            <p>
+             {itens.infoAdicionalPets} <br /> <span>Pet's</span>
+            </p>
+           </li>
+          </ul>
+         </div>
         </div>
        </div>
-      </div>
-      <div className="destino2">
-       <img src="./disney-1.jpg" alt="" />
-       <div className="descriptions">
-        <div className="descriptionLeft">
-         <img src="disney-2.jpg" alt="" />
-        </div>
-        <div className="descriptionRight">
-         <h1>Homewood Suites</h1>
-         <p>
-          Localizado a 8,6 km do Disney's Boardwalk, o Homewood Suites By Hilton
-          Orlando Flamingo Crossings, Fl oferece acomodações 3 estrelas em
-          Orlando e dispõe de churrasqueira.
-         </p>
-         <ul>
-          <li>
-           <p>
-            212 <br /> <span>Quartos</span>
-           </p>
-          </li>
-          <li>
-           <p>
-            314 <br /> <span>Hóspedes</span>
-           </p>
-          </li>
-          <li>
-           <p>
-            9.7 <br /> <span>Nota</span>
-           </p>
-          </li>
-          <li>
-           <p>
-            Sim <br /> <span>Pet's</span>
-           </p>
-          </li>
-         </ul>
-        </div>
-       </div>
-      </div>
-      <div className="destino3">
-       <img src="./punta-caribe-1.jpg" alt="" />
-       <div className="descriptions">
-        <div className="descriptionLeft">
-         <img src="punta-caribe-2.jpg" alt="" />
-        </div>
-        <div className="descriptionRight">
-         <h1>Copacabana Palace</h1>
-         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
-          nihil deserunt dolore accusantium deleniti voluptate vero velit, in
-          consequatur minus officiis voluptatem quia non impedit veritatis .
-         </p>
-         <ul>
-          <li>
-           <p>
-            212 <br /> <span>Quartos</span>
-           </p>
-          </li>
-          <li>
-           <p>
-            314 <br /> <span>Hóspedes</span>
-           </p>
-          </li>
-          <li>
-           <p>
-            9.7 <br /> <span>Nota</span>
-           </p>
-          </li>
-          <li>
-           <p>
-            Sim <br /> <span>Pet's</span>
-           </p>
-          </li>
-         </ul>
-        </div>
-       </div>
-      </div>
+      ))}
      </div>
     </div>
    </div>
   </main>
  );
-};
+}
 
 export default MainListas;

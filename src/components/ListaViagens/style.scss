@@ -9,7 +9,7 @@ sans-serif;
   .arrowLeft{
     cursor: pointer;
     font-size: 2.4rem;
-    color: rgb(173, 173, 173);
+    color: rgb(194, 194, 194);
     position: absolute;
     bottom: 300px;
     left: 55%;
@@ -18,7 +18,7 @@ sans-serif;
   .arrowRight{
     cursor: pointer;
     font-size: 2.4rem;
-    color: rgb(173, 173, 173);
+    color: rgb(194, 194, 194);
     position: absolute;
     bottom: 300px;
     right: 15%;
@@ -32,7 +32,7 @@ sans-serif;
   }
   .voltar {
     position: absolute;
-    left: 30%;
+    left: 20%;
     top: 36px;
     font-size: 2.3rem;
     color: white;
@@ -41,14 +41,14 @@ sans-serif;
   padding: 20px;
   margin: auto;
   width: 98%;
-  background: url("../../../public/fundo-azul-7.jpg");
+  background: url("../../../public/fundo-azul-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
   justify-content: space-between;
   .leftSide {
-   width: 100%;
+   width: 230%;
    margin-top: 150px;
    padding: 15px;
    display: flex;
@@ -99,14 +99,13 @@ sans-serif;
    box-shadow: 3px 6px rgba(0, 0, 0, .1);
     scroll-behavior: smooth;
    .destinosImages {
-    display: flex;
-    img {
-      width: 63vw;
-      height: 600px;
-    }
-    
-    .destino1 {
+    display: flex;    
+    .destinos {
       width: 100%;
+      img{
+        width: 58vw;
+        height: 600px;
+      }
       .descriptions {
         padding: 15px 5px;
         display: flex;
@@ -147,115 +146,6 @@ sans-serif;
            font-size: 0.7rem;
            font-weight: bold;
            color: rgb(0, 0, 120);
-          }
-         }
-        }
-       }
-      }
-      img {
-       margin-right: 20px;
-       margin-top: -10px;
-       width: 250px;
-       height: 250px;
-      }
-     }
-    }
-    .destino2 {
-     width: 100%;
-     .descriptions {
-      padding: 15px 5px;
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      max-width: 850px;
-      text-align: center;
-      .descriptionRight {
-       h1 {
-        font-family: $fontsTitle;
-        letter-spacing: 2px;
-        font-weight: 400;
-        margin-top: -10px;
-       }
-       p {
-        margin-right: auto;
-        width: 100%;
-        text-align: left;
-        letter-spacing: 1px;
-        font-weight: 100;
-        font-family: $fontsDescription;
-       }
-       ul {
-        display: flex;
-        margin-top: 35px;
-        justify-content: space-around;
-
-        li {
-         width: 70px;
-         height: 70px;
-         border-radius: 50%;
-         border: 3px solid gray;
-         display: flex;
-         align-items: center;
-         p {
-          text-align: center;
-          span {
-           font-size: 0.7rem;
-           font-weight: bold;
-           color: gray;
-          }
-         }
-        }
-       }
-      }
-      img {
-       margin-right: 20px;
-       margin-top: -10px;
-       width: 250px;
-       height: 250px;
-      }
-     }
-    }
-    .destino3 {
-     width: 100%;
-     .descriptions {
-      padding: 15px 5px;
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      max-width: 850px;
-      text-align: center;
-      .descriptionRight {
-       h1 {
-        font-family: $fontsTitle;
-        letter-spacing: 2px;
-        font-weight: 400;
-        margin-top: -10px;
-       }
-       p {
-        margin-right: auto;
-        width: 100%;
-        text-align: left;
-        letter-spacing: 1px;
-        font-weight: 100;
-        font-family: $fontsDescription;
-       }
-       ul {
-        display: flex;
-        margin-top: 35px;
-        justify-content: space-between;
-        li {
-         width: 70px;
-         height: 70px;
-         border-radius: 50%;
-         border: 3px solid gray;
-         display: flex;
-         align-items: center;
-         p {
-          text-align: center;
-          span {
-           font-size: 0.7rem;
-           font-weight: bold;
-           color: gray;
           }
          }
         }
