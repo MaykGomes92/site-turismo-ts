@@ -7,7 +7,7 @@ interface Hoteis  {
   infoAdicionalHospedes:number,
   infoAdicionalNota:number,
   infoAdicionalPets:string,
-  vejaMaisAdicional: string
+  vejaMaisAdicional: string,
 }
 
 export const ListaDeHoteis: Array<Hoteis> = [

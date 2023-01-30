@@ -8,6 +8,7 @@ import { BsArrowLeftCircle } from "react-icons/bs";
 import { BsArrowRightCircle } from "react-icons/bs";
 
 import { ListaDeHoteis } from "./listaHoteis";
+
 function MainListas() {
  const dadosSlide = React.useRef<HTMLDivElement>(null);
 
@@ -75,8 +76,12 @@ function MainListas() {
     <div className="rightSide" ref={dadosSlide}>
      <div className="destinosImages">
       {ListaDeHoteis.map((itens) => (
-       <div className="destinos">
+       <div className="destinos" key={itens.title}>
         <img src={itens.img1} alt="" />
+        <h1 className="titleImg">{itens.title}</h1>
+        <Link to={itens.title} className="btnVejaMaisImg">
+         Veja Mais
+        </Link>
         <div className="descriptions">
          <div className="descriptionLeft">
           <img src={itens.img2} alt="" />
