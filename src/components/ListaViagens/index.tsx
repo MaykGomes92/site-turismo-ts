@@ -7,7 +7,7 @@ import { RxDoubleArrowLeft } from "react-icons/rx";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import { BsArrowRightCircle } from "react-icons/bs";
 
-import { ListaDeHoteis } from "./listaHoteis";
+import { ListaDeHoteis } from "../../listaHoteis";
 
 function MainListas() {
  const dadosSlide = React.useRef<HTMLDivElement>(null);
