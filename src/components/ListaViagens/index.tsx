@@ -10,19 +10,20 @@ import { BsArrowRightCircle } from "react-icons/bs";
 import { ListaDeHoteis } from "../../listaHoteis";
 
 function MainListas() {
- const dadosSlide = React.useRef<HTMLDivElement>(null);
+ const dadosDaDivSlide = React.useRef<HTMLDivElement>(null);
 
- function slideEsquerda() {
-  if (dadosSlide.current !== null) {
-   dadosSlide.current.scrollLeft -= dadosSlide.current.offsetWidth;
+ function arrowSlideEsquerda() {
+  if (dadosDaDivSlide.current !== null) {
+   dadosDaDivSlide.current.scrollLeft -= dadosDaDivSlide.current.offsetWidth;
   }
  }
 
- function slideDireita() {
-  if (dadosSlide.current !== null) {
-   dadosSlide.current.scrollLeft += dadosSlide.current.offsetWidth;
+ function arrowSlideDireita() {
+  if (dadosDaDivSlide.current !== null) {
+   dadosDaDivSlide.current.scrollLeft += dadosDaDivSlide.current.offsetWidth;
   }
  }
+
  return (
   <main className="contentListasViagens">
    <div className="mainListas">
@@ -71,9 +72,9 @@ function MainListas() {
       </li>
      </ul>
     </div>
-    <BsArrowLeftCircle className="arrowLeft" onClick={slideEsquerda} />
-    <BsArrowRightCircle className="arrowRight" onClick={slideDireita} />
-    <div className="rightSide" ref={dadosSlide}>
+    <BsArrowLeftCircle className="arrowLeft" onClick={arrowSlideEsquerda} />
+    <BsArrowRightCircle className="arrowRight" onClick={arrowSlideDireita} />
+    <div className="rightSide" ref={dadosDaDivSlide}>
      <div className="destinosImages">
       {ListaDeHoteis.map((itens) => (
        <div className="destinos" key={itens.title}>

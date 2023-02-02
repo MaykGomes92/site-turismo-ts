@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { ListaDeHoteis, Hoteis } from "../../listaHoteis";
+import { ListaDeHoteis, TypesHoteis } from "../../listaHoteis";
 
 const HotelEscolhido = () => {
  const { id } = useParams();
- const [filtrarHoteis, setFiltrarHoteis] = React.useState<Hoteis[]>();
+ const [filtrarListaDeHoteis, setFiltrarHoteis] = React.useState<TypesHoteis[]>();
 
  React.useEffect(() => {
   setFiltrarHoteis(
@@ -16,8 +16,8 @@ const HotelEscolhido = () => {
 
  return (
   <>
-   {filtrarHoteis &&
-    filtrarHoteis.map((itens: any) => (
+   {filtrarListaDeHoteis &&
+    filtrarListaDeHoteis.map((itens: any) => (
      <div key={itens.title}>
       <h1>{itens.title}</h1>
       <p>{itens.descricao}</p>

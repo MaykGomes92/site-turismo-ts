@@ -1,4 +1,4 @@
-export interface Hoteis  {
+export interface TypesHoteis  {
  img1: string;
  img2: string;
  title: string;
@@ -10,7 +10,7 @@ export interface Hoteis  {
  vejaMaisAdicional: string;
 };
 
-export const ListaDeHoteis: Array<Hoteis> = [
+export const ListaDeHoteis: Array<TypesHoteis> = [
  {
   img1: "./rj-1-p.jpg",
   img2: "rj-2.jpg",
@@ -65,9 +65,9 @@ export const ListaDeHoteis: Array<Hoteis> = [
   title: "Suiça Hotel",
   descricao:
    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nihil deserunt dolore accusantium deleniti voluptate vero velit, in consequatur minus officiis voluptatem quia non impedit veritatis .",
-  infoAdicionalQuarto: 197,
-  infoAdicionalHospedes: 428,
-  infoAdicionalNota: 9.6,
+  infoAdicionalQuarto: 247,
+  infoAdicionalHospedes: 318,
+  infoAdicionalNota: 9.9,
   infoAdicionalPets: "Sim",
   vejaMaisAdicional: "hotel-suica",
  },
@@ -77,9 +77,9 @@ export const ListaDeHoteis: Array<Hoteis> = [
   title: "Londres Hotel",
   descricao:
    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nihil deserunt dolore accusantium deleniti voluptate vero velit, in consequatur minus officiis voluptatem quia non impedit veritatis .",
-  infoAdicionalQuarto: 197,
-  infoAdicionalHospedes: 428,
-  infoAdicionalNota: 9.6,
+  infoAdicionalQuarto: 97,
+  infoAdicionalHospedes: 228,
+  infoAdicionalNota: 9.3,
   infoAdicionalPets: "Sim",
   vejaMaisAdicional: "hotel-londres",
  },
