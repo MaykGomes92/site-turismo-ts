@@ -5,6 +5,9 @@ const index = () => {
   
   return (
     <main className='mainHome'>
+
+      <img className='gifPaperPlane' src="juicy-blue-paper-plane.gif" alt='paperPlane' loading='eager'/>
+
       <header>
         <img src='logo-area-1.png' alt='logo' />
       </header>

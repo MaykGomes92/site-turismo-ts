@@ -83,4 +83,28 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   infoAdicionalPets: "Sim",
   vejaMaisAdicional: "hotel-londres",
  },
+ {
+  img1: "./egito-1.webp",
+  img2: "londres-2.jpeg",
+  title: "Egito Hotel",
+  descricao:
+   "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nihil deserunt dolore accusantium deleniti voluptate vero velit, in consequatur minus officiis voluptatem quia non impedit veritatis .",
+  infoAdicionalQuarto: 97,
+  infoAdicionalHospedes: 228,
+  infoAdicionalNota: 9.3,
+  infoAdicionalPets: "Sim",
+  vejaMaisAdicional: "hotel-londres",
+ },
+ {
+  img1: "./japao-1.webp",
+  img2: "londres-2.jpeg",
+  title: "Japao Hotel",
+  descricao:
+   "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nihil deserunt dolore accusantium deleniti voluptate vero velit, in consequatur minus officiis voluptatem quia non impedit veritatis .",
+  infoAdicionalQuarto: 97,
+  infoAdicionalHospedes: 228,
+  infoAdicionalNota: 9.3,
+  infoAdicionalPets: "Sim",
+  vejaMaisAdicional: "hotel-londres",
+ },
 ];

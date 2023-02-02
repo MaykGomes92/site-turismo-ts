@@ -78,7 +78,7 @@ function MainListas() {
      <div className="destinosImages">
       {ListaDeHoteis.map((itens) => (
        <div className="destinos" key={itens.title}>
-        <img src={itens.img1} alt="" />
+        <img className="imageCarrousel" src={itens.img1} alt="" />
         <h1 className="titleImg">{itens.title}</h1>
         <Link to={itens.title} className="btnVejaMaisImg">
          Veja Mais
