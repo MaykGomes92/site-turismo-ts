@@ -21,8 +21,11 @@ function MainListas() {
  function arrowSlideDireita() {
   if (dadosDaDivSlide.current !== null) {
    dadosDaDivSlide.current.scrollLeft += dadosDaDivSlide.current.offsetWidth;
+    if(dadosDaDivSlide.current?.offsetWidth * 7 === dadosDaDivSlide.current?.scrollLeft) {
+     dadosDaDivSlide.current.scrollLeft = 0
+    }
   }
- }
+}
 
  return (
   <main className="contentListasViagens">
