@@ -84,7 +84,7 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   vejaMaisAdicional: "hotel-londres",
  },
  {
-  img1: "./egito-1.webp",
+  img1: "./egito-1-p.jpg",
   img2: "egito-2.webp",
   title: "Egito Hotel Resort",
   descricao:
@@ -96,7 +96,7 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   vejaMaisAdicional: "hotel-londres",
  },
  {
-  img1: "./japao-1.webp",
+  img1: "./japao-1-p.jpg",
   img2: "japao-2.jpg",
   title: "Japao Hotel Resort",
   descricao:

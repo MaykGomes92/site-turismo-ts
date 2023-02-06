@@ -92,6 +92,7 @@ function MainListas() {
          </div>
          <div className="descriptionRight">
           <h1>{itens.title}</h1>
+          
           <p>{itens.descricao}</p>
           <ul>
            <li>
