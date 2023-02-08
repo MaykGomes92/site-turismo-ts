@@ -1,13 +1,12 @@
 import React from "react";
-import "./style.scss";
+import "./styles.scss";
 import { Link } from "react-router-dom";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
-import { RxDoubleArrowLeft } from "react-icons/rx";
 import { BsArrowLeftCircle } from "react-icons/bs";
 import { BsArrowRightCircle } from "react-icons/bs";
-
 import { ListaDeHoteis } from "../../listaHoteis";
+import Header from "../Header";
 
 function MainListas() {
  const dadosDaDivSlide = React.useRef<HTMLDivElement>(null);
@@ -30,16 +29,7 @@ function MainListas() {
  return (
   <main className="contentListasViagens">
    <div className="mainListas">
-    <Link to="/">
-     <img
-      className="logoViagens"
-      src="./logo-area-1.png"
-      alt="logo da empresa"
-     />
-    </Link>
-    <Link className="voltar" to="/">
-     <RxDoubleArrowLeft />
-    </Link>
+    <Header />
     <div className="leftSide">
      <div className="textTitle">
       <h1>Sky Team</h1>

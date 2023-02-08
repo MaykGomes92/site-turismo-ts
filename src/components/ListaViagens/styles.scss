@@ -17,6 +17,10 @@ $fontsDescription: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
   height: 100vh;
   display: flex;
   justify-content: space-between;
+
+  .voltar {
+    left: 30%;
+  }
   .arrowLeft {
    cursor: pointer;
    font-size: 2.4rem;
@@ -34,20 +38,6 @@ $fontsDescription: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
    bottom: 300px;
    right: 15%;
    z-index: 99;
-  }
-
-  .logoViagens {
-   position: absolute;
-   width: 120px;
-   filter: brightness(300%);
-  }
-  .voltar {
-   position: absolute;
-   left: 20%;
-   top: 36px;
-   font-size: 2.3rem;
-   color: white;
-   cursor: pointer;
   }
   .leftSide {
    width: 320%;
@@ -204,10 +194,10 @@ $fontsDescription: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
    width: 100%;
    flex-wrap: wrap;
    .logoViagens {
-    top: 20px;
+    top: 13px;
    }
    .voltar {
-    left: 60%;
+    left: 85%;
    }
    .arrowLeft {
     bottom: -250px;
