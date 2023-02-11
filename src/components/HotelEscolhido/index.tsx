@@ -2,6 +2,7 @@ import React from "react";
 import "./styles.scss";
 import { useParams } from "react-router-dom";
 import { ListaDeHoteis, PropsHoteis, ImagesHoteis } from "../../listaHoteis";
+import {BiStar} from 'react-icons/bi'
 import Header from "../Header";
 
 const HotelEscolhido = () => {
@@ -37,7 +38,13 @@ const HotelEscolhido = () => {
      ))}
     </div>
     <div className="descricaoLeft">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus eligendi officia, ipsum numquam provident rem corporis labore nesciunt, non unde nobis, facilis tempore. Amet quos, ad neque qui quae ab!</p>
+      <div className="notaHotel">
+        <BiStar/>
+        <BiStar/>
+        <BiStar/>
+        <BiStar/>
+        <BiStar/>
+      </div>
     </div>
     <div className="informacoesRight">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nemo cumque dolorum eveniet provident iste id odit illum molestiae quisquam exercitationem dolores, alias, ex ducimus veritatis ab quae amet eaque.</p>
