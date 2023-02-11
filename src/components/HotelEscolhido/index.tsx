@@ -21,7 +21,7 @@ const HotelEscolhido = () => {
   <>
    <header className="headerPageHotelEscolhido">
     <Header />
-    <h1>Sky Team</h1>
+    <h1>Sky Teamm</h1>
    </header>
    {filtrarListaDeHoteis &&
     filtrarListaDeHoteis.map((itens: any) => (
