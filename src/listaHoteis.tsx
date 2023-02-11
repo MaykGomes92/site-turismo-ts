@@ -1,4 +1,4 @@
-export interface TypesHoteis  {
+export interface PropsHoteis {
  img1: string;
  img2: string;
  title: string;
@@ -7,10 +7,10 @@ export interface TypesHoteis  {
  infoAdicionalHospedes: number;
  infoAdicionalNota: number;
  infoAdicionalPets: string;
- vejaMaisAdicional: string;
-};
+ localizacaoHotel:string;
+}
 
-export const ListaDeHoteis: Array<TypesHoteis> = [
+export const ListaDeHoteis: PropsHoteis[] =[
  {
   img1: "./rj-1-p.jpg",
   img2: "rj-2.jpg",
@@ -21,7 +21,7 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   infoAdicionalHospedes: 514,
   infoAdicionalNota: 9.8,
   infoAdicionalPets: "Sim",
-  vejaMaisAdicional: "hotel-rj",
+  localizacaoHotel:'Rio de Janeiro -  Brazil'
  },
  {
   img1: "./disney-1-p.jpg",
@@ -33,7 +33,7 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   infoAdicionalHospedes: 986,
   infoAdicionalNota: 9.9,
   infoAdicionalPets: "Sim",
-  vejaMaisAdicional: "hotel-disney",
+  localizacaoHotel: 'Orlando - EUA'
  },
  {
   img1: "./punta-caribe-1-p.jpg",
@@ -45,7 +45,7 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   infoAdicionalHospedes: 267,
   infoAdicionalNota: 9.5,
   infoAdicionalPets: "Sim",
-  vejaMaisAdicional: "hotel-caribe",
+  localizacaoHotel: 'Punta Cana - República Dominicana'
  },
  {
   img1: "./canada-1-p.jpg",
@@ -57,7 +57,7 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   infoAdicionalHospedes: 428,
   infoAdicionalNota: 9.6,
   infoAdicionalPets: "Sim",
-  vejaMaisAdicional: "hotel-canada",
+  localizacaoHotel: 'Hotel Resort - Canadá'
  },
  {
   img1: "./suica-1-p.jpg",
@@ -69,7 +69,7 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   infoAdicionalHospedes: 318,
   infoAdicionalNota: 9.9,
   infoAdicionalPets: "Sim",
-  vejaMaisAdicional: "hotel-suica",
+  localizacaoHotel: 'Suiça Resorte - Suiça'
  },
  {
   img1: "./londres-1-p.jpg",
@@ -81,7 +81,7 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   infoAdicionalHospedes: 228,
   infoAdicionalNota: 9.3,
   infoAdicionalPets: "Sim",
-  vejaMaisAdicional: "hotel-londres",
+  localizacaoHotel: 'Londres Hotel - Londres'
  },
  {
   img1: "./egito-1-p.jpg",
@@ -93,18 +93,32 @@ export const ListaDeHoteis: Array<TypesHoteis> = [
   infoAdicionalHospedes: 228,
   infoAdicionalNota: 9.3,
   infoAdicionalPets: "Sim",
-  vejaMaisAdicional: "hotel-londres",
+  localizacaoHotel: 'Egito Resort - Egito'
  },
  {
   img1: "./japao-1-p.jpg",
   img2: "japao-2.jpg",
-  title: "Japao Hotel Resort",
+  title: "Japão Hotel Resort",
   descricao:
    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas nihil deserunt dolore accusantium deleniti voluptate vero velit, in consequatur minus officiis voluptatem quia non impedit veritatis .",
   infoAdicionalQuarto: 97,
   infoAdicionalHospedes: 228,
   infoAdicionalNota: 9.3,
   infoAdicionalPets: "Sim",
-  vejaMaisAdicional: "hotel-londres",
- },
-];
+  localizacaoHotel: 'Japão Hotel - Japão'
+ }
+ ]
+
+export const ImagesHoteis = [
+ '../carr-1.jpg',
+ '../carr-2.jpg',
+ '../carr-3.jpg',
+ '../carr-4.jpg',
+ '../carr-5.jpg',
+ // '../carr-6.jpg',
+ // '../carr-7.jpg',
+ // '../carr-8.jpg',
+ // '../carr-9.jpg',
+ // '../carr-10.jpg',
+ // '../carr-11.jpg',
+]
