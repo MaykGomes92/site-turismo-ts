@@ -23,7 +23,7 @@ const HotelEscolhido = () => {
   <main className="hotelEscolhidoContent">
    <header className="headerPageHotelEscolhido">
     <Header />
-    <h1>Sky Teamm2</h1>
+    <h1>Sky Team</h1>
    </header>
    {filtrarListaDeHoteis &&
     filtrarListaDeHoteis.map((itens, index) => (
@@ -64,7 +64,7 @@ const HotelEscolhido = () => {
        <li>Suites: 36</li>
       </ul>
      </div>
-     <p>mostrar mais</p>
+     <p className="mostrarMais">Mostrar mais ⇩</p>
 
      <div className="informacoesSobre">
       <h1>
@@ -85,11 +85,11 @@ const HotelEscolhido = () => {
      <div className="resumoReserva">
       <h1>Resumo da Reserva</h1>
 
-      <h2>{filtrarListaDeHoteis[0] ? filtrarListaDeHoteis[0].title : ""}</h2>
-      <h2>Check-in / Check-out</h2>
+      <h2 >{filtrarListaDeHoteis[0] ? filtrarListaDeHoteis[0].title : ""}</h2>
+      <h2 className="subTitles">Check-in / Check-out</h2>
       <p>08/05/2023 até 09/05/2023 (1 diária)</p>
 
-      <h2>Hóspedes</h2>
+      <h2 className="subTitles">Hóspedes</h2>
       <p className="borderBottom">2 Hóspedes (2 adultos)</p>
 
       <div className="informacaoQuarto">
