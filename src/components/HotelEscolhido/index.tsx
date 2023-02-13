@@ -11,6 +11,16 @@ const HotelEscolhido = () => {
   []
  );
 
+ const [valorDiaria, setValorDiaria] = React.useState(462.63);
+ 
+ function adicionarDesconto() {
+  setValorDiaria((event): number => {
+   return Number(valorDiaria - valorDiaria * (40 / 100));
+  });
+ }
+
+
+
  React.useEffect(() => {
   setFiltrarHoteis(
    ListaDeHoteis.filter((itens, index) => {
@@ -85,7 +95,7 @@ const HotelEscolhido = () => {
      <div className="resumoReserva">
       <h1>Resumo da Reserva</h1>
 
-      <h2 >{filtrarListaDeHoteis[0] ? filtrarListaDeHoteis[0].title : ""}</h2>
+      <h2>{filtrarListaDeHoteis[0] ? filtrarListaDeHoteis[0].title : ""}</h2>
       <h2 className="subTitles">Check-in / Check-out</h2>
       <p>08/05/2023 até 09/05/2023 (1 diária)</p>
 
@@ -104,13 +114,18 @@ const HotelEscolhido = () => {
       <div className="contentCompra">
        <h1>Sua compra</h1>
        <p>1 diária</p>
-       <span>R$ 462,63</span>
+       <span>R$ {valorDiaria.toFixed(2)}</span>
 
        <h2>Para 1 diária</h2>
-       <span>R$ 462,63</span>
+       <span>R$ {valorDiaria.toFixed(2)}</span>
 
+       <img
+        src="../desconto-40.png"
+        alt="imagem desconto"
+        className="descontoImage"
+       />
        <button>Reservar agora</button>
-       <button>Pedir desconto</button>
+       <button onClick={adicionarDesconto}>Pedir desconto</button>
       </div>
      </div>
     </div>
