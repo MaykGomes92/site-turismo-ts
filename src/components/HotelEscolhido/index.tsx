@@ -1,8 +1,14 @@
 import React from "react";
 import "./styles.scss";
 import { useParams } from "react-router-dom";
-import { ListaDeHoteis, PropsHoteis, ImagesHoteis } from "../../listaHoteis";
+import {
+ ListaDeHoteis,
+ PropsHoteis,
+ ImagesHoteis,
+ ImagesHoteisCarrousel,
+} from "../../listaHoteis";
 import { BiStar } from "react-icons/bi";
+import { AiOutlineClose } from "react-icons/ai";
 import Header from "../Header";
 
 const HotelEscolhido = () => {
@@ -10,16 +16,29 @@ const HotelEscolhido = () => {
  const [filtrarListaDeHoteis, setFiltrarHoteis] = React.useState<PropsHoteis[]>(
   []
  );
+ const [pegarSrcFotoGrid, setPegarSrcFotoGrid] = React.useState();
+ const [ativarImagensModal, setAtivarImagensModal] = React.useState(false);
 
  const [valorDiaria, setValorDiaria] = React.useState(462.63);
- 
- function adicionarDesconto() {
-  setValorDiaria((event): number => {
-   return Number(valorDiaria - valorDiaria * (40 / 100));
-  });
+ const [descontoAdicionado, setDescontoAdicioando] = React.useState(false);
+
+ function ativarModal() {
+  setAtivarImagensModal(!ativarImagensModal);
  }
 
+ function pegarSrcFoto(e: any) {
+  setPegarSrcFotoGrid(e.target.src);
+ }
 
+ function adicionarDesconto() {
+  if (!descontoAdicionado) {
+   setDescontoAdicioando(true);
+   return setValorDiaria((event): number => {
+    return Number(valorDiaria - valorDiaria * (40 / 100));
+   });
+  }
+  alert("O desconto já foi adicionado !");
+ }
 
  React.useEffect(() => {
   setFiltrarHoteis(
@@ -30,7 +49,14 @@ const HotelEscolhido = () => {
  }, [id]);
 
  return (
-  <main className="hotelEscolhidoContent">
+  <main
+   className="hotelEscolhidoContent"
+   style={
+    ativarImagensModal
+     ? { height: "100vh", overflow: "hidden" }
+     : { overflow: "auto" }
+   }
+  >
    <header className="headerPageHotelEscolhido">
     <Header />
     <h1>Sky Team</h1>
@@ -44,8 +70,8 @@ const HotelEscolhido = () => {
    <div className="conteudoDaPage">
     <div className="contentImages">
      {ImagesHoteis.map((itens, index) => (
-      <div key={index} className="images">
-       <img src={itens} alt="fotos hotel" />
+      <div onClick={ativarModal} key={index} className="images">
+       <img onClick={pegarSrcFoto} src={itens} alt="fotos hotel" />
       </div>
      ))}
     </div>
@@ -130,6 +156,25 @@ const HotelEscolhido = () => {
      </div>
     </div>
    </div>
+
+   {ativarImagensModal && (
+    <div className="ContentcarrouselModal">
+     <AiOutlineClose className="closeBtn" onClick={ativarModal} />
+     <img
+      src={pegarSrcFotoGrid}
+      alt="imagem hotem"
+      className="imagePrincipal"
+     />
+
+     <div className="carrouselInferior">
+      {ImagesHoteisCarrousel.map((itens, index) => (
+       <div key={index} className="images">
+        <img onClick={pegarSrcFoto} src={itens} alt="fotos hotel" />
+       </div>
+      ))}
+     </div>
+    </div>
+   )}
   </main>
  );
 };

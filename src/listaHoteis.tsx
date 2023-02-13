@@ -115,10 +115,17 @@ export const ImagesHoteis = [
  '../carr-3.jpg',
  '../carr-4.jpg',
  '../carr-5.jpg',
- // '../carr-6.jpg',
- // '../carr-7.jpg',
- // '../carr-8.jpg',
- // '../carr-9.jpg',
- // '../carr-10.jpg',
- // '../carr-11.jpg',
+]
+export const ImagesHoteisCarrousel = [
+ '../carr-1.jpg',
+ '../carr-2.jpg',
+ '../carr-3.jpg',
+ '../carr-4.jpg',
+ '../carr-5.jpg',
+ '../carr-6.jpg',
+ '../carr-7.jpg',
+ '../carr-8.jpg',
+ '../carr-9.jpg',
+ '../carr-10.jpg',
+ '../carr-11.jpg',
 ]
