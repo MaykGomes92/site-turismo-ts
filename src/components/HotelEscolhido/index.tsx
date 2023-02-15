@@ -158,7 +158,7 @@ const HotelEscolhido = () => {
    </div>
 
    {ativarImagensModal && (
-    <div className="ContentcarrouselModal">
+    <div className="contentCarrouselModal">
      <AiOutlineClose className="closeBtn" onClick={ativarModal} />
      <img
       src={pegarSrcFotoGrid}

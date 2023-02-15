@@ -274,7 +274,7 @@ $colorGrey: rgb(110, 110, 110);
   }
  }
 
- .ContentcarrouselModal {
+ .contentCarrouselModal {
   position: absolute;
   top: 0;
   background-color: rgba(0, 0, 0, 0.911);
@@ -323,44 +323,61 @@ $colorGrey: rgb(110, 110, 110);
 /* ======================================= MEDIA QUERIES ==========================================*/
 // Ajeitar Fotos do Grid por fora e o carrousel
 
-
-
 @media (max-width: 1230px) {
- .informacoesRight {
-  height: 800px;
+ .hotelEscolhidoContent {
+  .contentCarrouselModal {
+   ::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+   }
+   ::-webkit-scrollbar {
+    width: 2px;
+    height: 5px;
+    background: #ebebeb;
+   }
+   ::-webkit-scrollbar-thumb {
+    background: #181414;
+   }
+   .carrouselInferior {
+    overflow-x: scroll;
+   }
+  }
+  .informacoesRight {
+   height: 800px;
+  }
  }
 }
 
 @media (max-width: 955px) {
- .informacoesRight {
-  height: 900px;
+ .hotelEscolhidoContent {
+  .informacoesRight {
+   height: 900px;
+  }
  }
 }
 
 @media (max-width: 755px) {
-
  .hotelEscolhidoContent {
- .headerPageHotelEscolhido {
-  h1 {
-   font-size: 1.5rem;
-  }
-  .logoViagens {
-   top: 30px;
-   left: 1%;
-   width: 70px;
-  }
-  .voltar {
-   top: 30px;
-   left: 86%;
+  .headerPageHotelEscolhido {
+   h1 {
+    font-size: 1.5rem;
+   }
+   .logoViagens {
+    top: 30px;
+    left: 1%;
+    width: 70px;
+   }
+   .voltar {
+    top: 30px;
+    left: 86%;
+   }
   }
  }
-}
 
  .hotelEscolhidoContent {
   grid-template-rows: repeat(3, 300px);
   padding: 10px;
 
-  .localizacaoHotel{
+  .localizacaoHotel {
    padding-left: 10px;
    font-size: 1.5rem;
   }
@@ -370,17 +387,17 @@ $colorGrey: rgb(110, 110, 110);
     gap: 5px;
     grid-row: 1;
    }
-  .descricaoLeft {
-   grid-row: 2;
-   grid-column: 1/6;
-   height: 100%;
-  }
+   .descricaoLeft {
+    grid-row: 2;
+    grid-column: 1/6;
+    height: 100%;
+   }
 
-  .informacoesRight {
-   grid-row: 3;
-   grid-column: 1/6;
-   background-color: white;
+   .informacoesRight {
+    grid-row: 3;
+    grid-column: 1/6;
+    background-color: white;
+   }
   }
- }
  }
 }
