@@ -401,3 +401,33 @@ $colorGrey: rgb(110, 110, 110);
   }
  }
 }
+
+// O grid de imagens nao pode continuar assim achatado, vai ter que botar imagem uma abaixo da outra
+@media (max-width: 755px) {
+ .hotelEscolhidoContent {
+  .conteudoDaPage {
+   .contentImages {
+    grid-template-columns: 1fr;
+    .images img {
+    }
+
+    .images:first-child {
+    }
+
+    .images:nth-child(2) {
+     display: none;
+    }
+
+    .images:nth-child(3) {
+     display: none;
+    }
+    .images:nth-child(4) {
+     display: none;
+    }
+    .images:nth-child(5) {
+     display: none;
+    }
+   }
+  }
+ }
+}
