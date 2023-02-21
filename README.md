@@ -3,7 +3,7 @@
  [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 <a href='https://site-turismo-ts.vercel.app/'>Visite o site</a>
 
-## Tecnologias e Métodos Utilizados
+## Tecnologias Utilizadas
 <div style={display:'flex'}>
 
 <img src='https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB' />
